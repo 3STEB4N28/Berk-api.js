@@ -1,3 +1,6 @@
+## Get Started
+For support join our [Support Server!](https://discord.gg/uGUZshHcgV)
+
 ## Installation
 With npm:
 ```bash
