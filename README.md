@@ -30,3 +30,4 @@ All available methods can be found down below.
 | `poohsay()` | text1, text2 | undefined | Returns winnie pooh elegant meme with the given texts. text1 is top text and text2 bottom text. | `poohsay("BDFD, Aoi.js", "Discord.js")` |
 | `angrymob()` | text1, text2 | undefined | Returns angry mob meme with the given text. text1 is top text, text2 is bottom text. | `angrymob("BDFD is.....", "The best coding lang!")` |
 | `uglier()` | image | undefined | Returns the given image on the "It's even uglier up close." meme. | `uglier(https://cdn.discordapp.com/avatars/551786741296791562/b57386832e12ec4577554fd123ba0961.webp?size=2048)` |
+| `info()` | none | undefined | Returns package info | `info.version` |
