@@ -24,7 +24,7 @@ module.exports = {
     get info() {
         return({
             "name": "berk-api.js",
-            "version": "0.0.6-beta",
+            "version": require(path.join(process.cwd(), "package.json")).version,
             "source": "https://api.berk404.ga/",
             "language": "javascript",
             "contributors": ["3STEB4N28#2621", "Falsis#5805", "Berk#3506"],
@@ -46,7 +46,7 @@ module.exports = {
 
         const a = await request(type, image);
 
-        return a.image;
+        return encodeAnswer(a.data.image);
     },
     async anycard(image, {text1 = undefined, text2 = undefined, text3 = undefined}, {color1, color2, color3}, background) {
         if(!image) {
@@ -117,7 +117,7 @@ module.exports = {
             a = await request('pablo', `text=${await encodeText(text)}`);
         }
 
-        return a.data.image
+        return encodeAnswer(a.data.image);
     },
     async whoreallyis(image) {
         if(!image) {
@@ -128,7 +128,7 @@ module.exports = {
 
         let a = await request('whoreallyis', `image=${image}`);
 
-        return a.data.image;
+        return encodeAnswer(a.data.image);
     },
     async poohsay(text1, text2) {
         if(!text1) {
@@ -171,6 +171,6 @@ module.exports = {
 
         let a = await request('uglier', `image=${image}`);
 
-        return a.data.image;
+        return encodeAnswer(a.data.image);
     }
 }
