@@ -1,0 +1,28 @@
+{
+  "name": "berk-api.js",
+  "version": "0.0.6-beta",
+  "description": "The official api wrapper for Berk#3506's API!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "keywords": [
+    "api",
+    "berk",
+    "berk-js",
+    "berkjs",
+    "berk404"
+  ],
+  "author": "3STEB4N28",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "colors": "^1.4.0"
+  },
+  "homepage": "https://github.com/3STEB4N28/Berk-api.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/3STEB4N28/Berk-api.js.git"
+  }
+}
