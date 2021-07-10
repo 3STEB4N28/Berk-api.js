@@ -14,11 +14,12 @@
     "berkjs",
     "berk404"
   ],
-  "author": "3STEB4N28",
+  "author": "3STEB4N28 3steb4n@3steb4n28.xyz",
   "license": "ISC",
   "dependencies": {
     "axios": "^0.21.1",
-    "colors": "^1.4.0"
+    "colors": "^1.4.0",
+    "node-fetch": "^2.6.1"
   },
   "homepage": "https://github.com/3STEB4N28/Berk-api.js",
   "repository": {
