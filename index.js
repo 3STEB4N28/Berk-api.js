@@ -19,6 +19,13 @@ function encodeText(text) {
     return r;
 }
 
+function encodeAnswer(text) {
+    let r = text.split(/ +/g).join('+').replace(/#/g, '%23').replace(/!/g, '%21');
+
+    return r;
+
+}
+
 module.exports = {
     version: require('./package.json').version,
     get info() {
@@ -44,7 +51,7 @@ module.exports = {
 
         const a = await request(type, image);
 
-        return a.image;
+        return encodeAnswer(a.data.image);
     },
     async anycard(image, {text1 = undefined, text2 = undefined, text3 = undefined}, {color1, color2, color3}, background) {
         if(!image) {
@@ -98,7 +105,7 @@ module.exports = {
             }
         }
 
-        return a.data.image;
+        return encodeAnswer(a.data.image);
     },
     async pablo(text, everyone = false) {
         if(!text) {
@@ -115,7 +122,7 @@ module.exports = {
             a = await request('pablo', `text=${await encodeText(text)}`);
         }
 
-        return a.data.image
+        return encodeAnswer(a.data.image);
     },
     async whoreallyis(image) {
         if(!image) {
@@ -126,7 +133,7 @@ module.exports = {
 
         let a = await request('whoreallyis', `image=${image}`);
 
-        return a.data.image;
+        return encodeAnswer(a.data.image);
     },
     async poohsay(text1, text2) {
         if(!text1) {
@@ -142,7 +149,7 @@ module.exports = {
 
         let a = await request('poohsay', `text1=${await encodeText(text1)}&text2=${await encodeText(text2)}`);
 
-        return a;
+        return encodeAnswer(a.data.image);
     },
     async angrymob(text1, text2) {
         if(!text1) {
@@ -158,7 +165,7 @@ module.exports = {
 
         let a = await request('angrymob', `text1=${await encodeText(text1)}&text2=${await encodeText(text2)}`);
 
-        return a;
+        return encodeAnswer(a.data.image);
     },
     async uglier(image) {
         if(!image) {
@@ -169,6 +176,6 @@ module.exports = {
 
         let a = await request('uglier', `image=${image}`);
 
-        return a.data.image;
+        return encodeAnswer(a.data.image);
     }
 }
