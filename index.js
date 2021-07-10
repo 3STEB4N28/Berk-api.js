@@ -21,6 +21,14 @@ function encodeText(text) {
 
 module.exports = {
     version: require('./package.json').version,
+    get info() {
+        return({
+            "version": "0.0.6-beta",
+            "name": "berk-api.js",
+            "source": "https://api.berk404.ga/",
+            "language": "javascript"
+        })
+    }, //Falsis :)))
     async overlay(type, image) {
         if(!type) {
             return console.log(`${colors.red('[Berk-api.js]')} Function ${colors.blue('overlay')} is missing a ${colors.yellow('type')}!`);
