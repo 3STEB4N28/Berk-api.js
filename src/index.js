@@ -21,7 +21,7 @@ function encodeText(text) {
 }
 
 module.exports = {
-    version: require('./package.json').version,
+    version: require(path.join(process.cwd(), "package.json")).version,
     get info() {
         return({
             "name": "berk-api.js",
