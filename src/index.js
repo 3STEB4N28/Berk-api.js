@@ -100,7 +100,7 @@ module.exports = {
             }
         }
 
-        return a.data.image;
+        return encodeAnswer(a.data.image);
     },
     async pablo(text, everyone = false) {
         if(!text) {
