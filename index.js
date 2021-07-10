@@ -30,7 +30,7 @@ module.exports = {
     version: require('./package.json').version,
     get info() {
         return({
-            "version": "0.0.6-beta",
+            "version": require("./package.json").version,
             "name": "berk-api.js",
             "source": "https://api.berk404.ga/",
             "language": "javascript"
