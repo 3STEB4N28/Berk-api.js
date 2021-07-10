@@ -1,4 +1,4 @@
-const berk = require("./index.js");
+const berk = require("./src/index.js");
 console.log(berk.info)
 console.log(berk.info.version)
 console.log(berk.info.name)
