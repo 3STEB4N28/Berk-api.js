@@ -1,6 +1,6 @@
 {
   "name": "berk-api.js",
-  "version": "0.0.6-beta",
+  "version": "0.0.8-beta",
   "description": "The official api wrapper for Berk#3506's API!",
   "main": "index.js",
   "scripts": {
