@@ -14,8 +14,7 @@ async function request(endpoint, params) {
 }
 
 function encodeText(text) {
-    let r = text.split(/ +/g).join('+').replace(/#/g, '%23').replace(/=/g, '%3D').replace(/!/g, '%21')//.replace(/$/g, '%24');
-    //.replace();
+    let r = text.split(/ +/g).join('+').replace(/#/g, '%23').replace(/=/g, '%3D').replace(/!/g, '%21')
 
     return r;
 }
