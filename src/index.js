@@ -1,6 +1,7 @@
 const { get } = require("axios");
 const colors = require("colors");
 const url = "https://api.berk404.ga/check?link=";
+const path = require("path")
 
 async function request(endpoint, params) {
     let d;
