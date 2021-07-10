@@ -150,22 +150,6 @@ module.exports = {
 
         return await encodeAnswer(a.data.image);
     },
-    async poohsay(text1, text2) {
-        if(!text1) {
-            console.log(`${colors.red('[Berk-api.js]')} Function ${colors.blue('poohsay')} is missing ${colors.yellow('text1')}!`);
-            
-            return;
-        }
-        if(!text2) {
-            console.log(`${colors.red('[Berk-api.js]')} Function ${colors.blue('poohsay')} is missing ${colors.yellow('text2')}!`);
-            
-            return;
-        }
-
-        let a = await request('poohsay', `text1=${await encodeText(text1)}&text2=${await encodeText(text2)}`);
-
-        return await encodeAnswer(a.data.image);
-    },
     async angrymob(text1, text2) {
         if(!text1) {
             console.log(`${colors.red('[Berk-api.js]')} Function ${colors.blue('angrymob')} is missing ${colors.yellow('text1')}!`);
