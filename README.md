@@ -33,3 +33,8 @@ All available methods can be found down below.
 | `angrymob()` | text1, text2 | undefined | Returns angry mob meme with the given text. text1 is top text, text2 is bottom text. | `angrymob("BDFD is.....", "The best coding lang!")` |
 | `uglier()` | image | undefined | Returns the given image on the "It's even uglier up close." meme. | `uglier(https://cdn.discordapp.com/avatars/551786741296791562/b57386832e12ec4577554fd123ba0961.webp?size=2048)` |
 | `info()` | none | undefined | Returns package info | `info.version` |
+| `isbeautiful()` | image | undefined | Returns the given image on the this is beautiful meme. | `isbeautiful(https://cdn.discordapp.com/avatars/551786741296791562/b57386832e12ec4577554fd123ba0961.webp?size=2048)` |
+| `blocks()` | image | undefined | Returns the image on a Minecraft-like mine on the center. | `blocks(https://cdn.discordapp.com/avatars/551786741296791562/b57386832e12ec4577554fd123ba0961.webp?size=2048)` |
+| `trash()` | image | undefined | Returns the image on a pop-up to confirm the deletion of this trash. | `trasg(https://cdn.discordapp.com/avatars/551786741296791562/b57386832e12ec4577554fd123ba0961.webp?size=2048)` |
+| `iFearNoMan()` | image | undefined | Returns the given image on the I fear no man meme. | `iFearNoMan(https://cdn.discordapp.com/avatars/551786741296791562/b57386832e12ec4577554fd123ba0961.webp?size=2048)` |
+| `billy()` | text | undefined | Returns the given text on the "Shoot him again" meme. | `billy('BDFD sucks.. admit it` |
