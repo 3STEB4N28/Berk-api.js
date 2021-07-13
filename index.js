@@ -195,5 +195,61 @@ module.exports = {
         let a = await request('sus', `impostor=${impostor}%26crewmate=${crewmate}`);
 
         return await encodeAnswer(a.data.image)
+    },
+    ,
+    async isbeautiful(image) {
+        if(!image) {
+            console.log(`${colors.red('[Berk-api.js]')} Function ${colors.blue('isbeatiful')} is missing an ${colors.yellow('image')}!`);
+
+            return;
+        }
+
+        let a = await request('isbeautiful', `image=${image}`);
+
+        return await encodeAnswer(a.data.image);
+    },
+    async blocks(image) {
+        if(!image) {
+            console.log(`${colors.red('[Berk-api.js]')} Function ${colors.blue('blocks')} is missing an ${colors.yellow('image')}!`);
+
+            return;
+        }
+
+        let a = await request('blocks', `image=${image}`);
+
+        return await encodeAnswer(a.data.image);
+    },
+    async trash(image) {
+        if(!image) {
+            console.log(`${colors.red('[Berk-api.js]')} Function ${colors.blue('trash')} is missing an ${colors.yellow('image')}!`);
+
+            return;
+        }
+
+        let a = await request('trash', `image=${image}`);
+
+        return await encodeAnswer(a.data.image);
+    },
+    async iFearNoMan(image) {
+        if(!image) {
+            console.log(`${colors.red('[Berk-api.js]')} Function ${colors.blue('iFearNoMan')} is missing an ${colors.yellow('image')}!`);
+
+            return;
+        }
+
+        let a = await request('ifearnoman', `image=${image}`);
+
+        return await encodeAnswer(a.data.image);
+    },
+    async billy(text) {
+        if(!text) {
+            console.log(`${colors.red('[Berk-api.js]')} Function ${colors.blue('billy')} is missing a ${colors.yellow('text')}!`);
+
+            return;
+        }
+
+        let a = await request('billy', `text=${text}`);
+
+        return await encodeAnswer(a.data.image);
     }
 }
