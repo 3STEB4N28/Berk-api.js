@@ -35,6 +35,6 @@ All available methods can be found down below.
 | `info()` | none | undefined | Returns package info | `info.version` |
 | `isbeautiful()` | image | undefined | Returns the given image on the this is beautiful meme. | `isbeautiful(https://cdn.discordapp.com/avatars/551786741296791562/b57386832e12ec4577554fd123ba0961.webp?size=2048)` |
 | `blocks()` | image | undefined | Returns the image on a Minecraft-like mine on the center. | `blocks(https://cdn.discordapp.com/avatars/551786741296791562/b57386832e12ec4577554fd123ba0961.webp?size=2048)` |
-| `trash()` | image | undefined | Returns the image on a pop-up to confirm the deletion of this trash. | `trasg(https://cdn.discordapp.com/avatars/551786741296791562/b57386832e12ec4577554fd123ba0961.webp?size=2048)` |
+| `trash()` | image | undefined | Returns the image on a pop-up to confirm the deletion of this trash. | `trash(https://cdn.discordapp.com/avatars/551786741296791562/b57386832e12ec4577554fd123ba0961.webp?size=2048)` |
 | `iFearNoMan()` | image | undefined | Returns the given image on the I fear no man meme. | `iFearNoMan(https://cdn.discordapp.com/avatars/551786741296791562/b57386832e12ec4577554fd123ba0961.webp?size=2048)` |
 | `billy()` | text | undefined | Returns the given text on the "Shoot him again" meme. | `billy('BDFD sucks.. admit it` |
